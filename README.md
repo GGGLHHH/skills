@@ -43,6 +43,7 @@ Generated from official documentation and fine-tuned by Anthony.
 | Skill | Description | Source |
 |-------|-------------|--------|
 | [react](skills/react) | React 19 component model - hooks, actions/forms, concurrent rendering, SSR hydration | [reactjs/react.dev](https://github.com/reactjs/react.dev) |
+| [tailwindcss](skills/tailwindcss) | Tailwind CSS utility-first workflow - setup, theme variables, variants, and upgrade strategy | [tailwindlabs/tailwindcss.com](https://github.com/tailwindlabs/tailwindcss.com) |
 | [vue](skills/vue) | Vue.js core - reactivity, components, composition API | [vuejs/docs](https://github.com/vuejs/docs) |
 | [nuxt](skills/nuxt) | Nuxt framework - file-based routing, server routes, modules | [nuxt/nuxt](https://github.com/nuxt/nuxt) |
 | [pinia](skills/pinia) | Pinia - intuitive, type-safe state management for Vue | [vuejs/pinia](https://github.com/vuejs/pinia) |

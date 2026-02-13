@@ -9,6 +9,7 @@ export interface VendorSkillMeta {
  */
 export const submodules = {
   react: 'https://github.com/reactjs/react.dev',
+  tailwindcss: 'https://github.com/tailwindlabs/tailwindcss.com',
   vue: 'https://github.com/vuejs/docs',
   nuxt: 'https://github.com/nuxt/nuxt',
   vite: 'https://github.com/vitejs/vite',

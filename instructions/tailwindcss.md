@@ -1,0 +1,5 @@
+- Prefer Tailwind CSS v4 defaults and `@import "tailwindcss";`.
+- Keep utility composition in templates; avoid extracting to CSS too early.
+- For dynamic class names, prefer complete class mappings over string concatenation.
+- Prefer theme variables via `@theme` for design tokens and custom values.
+- Use utility variants (`hover:`, `md:`, `data-*`, `aria-*`, `@container`) before writing custom CSS.
