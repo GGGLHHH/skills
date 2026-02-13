@@ -1,0 +1,5 @@
+- Prefer using TypeScript over JavaScript.
+- Prefer function components and Hooks; avoid class components in new code.
+- Use Effects only for external synchronization. If Effect logic needs latest props/state without re-subscribing, prefer `useEffectEvent`.
+- Prefer form Action patterns (`<form action>`, `useActionState`, `useFormStatus`, `useOptimistic`) for mutations and pending UI.
+- Prefer React Compiler defaults when available; add manual memoization only for measured hot paths.

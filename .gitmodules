@@ -40,3 +40,6 @@
 [submodule "vendor/vuejs-ai"]
 	path = vendor/vuejs-ai
 	url = https://github.com/vuejs-ai/skills
+[submodule "sources/react"]
+	path = sources/react
+	url = https://github.com/reactjs/react.dev
