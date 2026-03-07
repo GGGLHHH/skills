@@ -45,6 +45,13 @@ export const vendors: Record<string, VendorSkillMeta> = {
       tsdown: 'tsdown',
     },
   },
+  'shadcn': {
+    official: true,
+    source: 'https://github.com/shadcn-ui/ui',
+    skills: {
+      shadcn: 'shadcn',
+    },
+  },
   'vuejs-ai': {
     source: 'https://github.com/vuejs-ai/skills',
     skills: {

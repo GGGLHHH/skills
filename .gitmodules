@@ -46,3 +46,6 @@
 [submodule "sources/tailwindcss"]
 	path = sources/tailwindcss
 	url = https://github.com/tailwindlabs/tailwindcss.com
+[submodule "vendor/shadcn"]
+	path = vendor/shadcn
+	url = https://github.com/shadcn-ui/ui

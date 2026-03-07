@@ -60,6 +60,7 @@ Synced from external repositories that maintain their own skills.
 | Skill | Description | Source |
 |-------|-------------|--------|
 | [slidev](skills/slidev) (Official) | Slidev - presentation slides for developers | [slidevjs/slidev](https://github.com/slidevjs/slidev) |
+| [shadcn](skills/shadcn) (Official) | shadcn/ui - add, search, fix, style, and compose source-distributed UI components | [shadcn-ui/ui](https://github.com/shadcn-ui/ui) |
 | [tsdown](skills/tsdown) (Official) | tsdown - TypeScript library bundler powered by Rolldown | [rolldown/tsdown](https://github.com/rolldown/tsdown) |
 | [turborepo](skills/turborepo) (Official) | Turborepo - high-performance build system for monorepos | [vercel/turborepo](https://github.com/vercel/turborepo) |
 | [vueuse-functions](skills/vueuse-functions) (Official) | VueUse - 200+ Vue composition utilities | [vueuse/skills](https://github.com/vueuse/skills) |
