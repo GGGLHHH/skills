@@ -92,6 +92,18 @@ Being shareable makes prompts easier to manage and reuse across projects. Being 
 
 You might hear people say "AGENTS.md outperforms skills". I think that's true — AGENTS.md loads everything upfront, so agents always respect it, whereas skills can have false negatives where agents don't pull them in when you'd expect. That said, I see this more as a gap in tooling and integration that will improve over time. Skills are really just a standardized format for agents to consume—plain markdown files at the end of the day. Think of them as a knowledge base for agents. If you want certain skills to always apply, you can reference them directly in your AGENTS.md.
 
+## Use with Codex
+
+Use this repository as a sync source for Codex skills across machines.
+
+```bash
+git clone https://github.com/GGGLHHH/skills.git ~/skills
+cd ~/skills
+./scripts/sync-to-codex.sh --mode link
+```
+
+Use `--mode copy` if you do not want symlinks. Use `--force` to replace existing targets in `~/.codex/skills`.
+
 ## Generate Your Own Skills
 
 Fork this project to create your own customized skill collection.
