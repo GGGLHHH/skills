@@ -1,6 +1,6 @@
 ---
 name: ag-atomic-commit
-description: Use when the user asks to create Git commits, split a change set into multiple commits, review staged or unstaged diffs for commit grouping, draft commit messages, or enforce repository AGENTS.md commit rules. Follow the applicable AGENTS.md instructions, prefer atomic commits grouped by one coherent change, write commit messages in English, and require explicit user approval before any `git commit` or `git push`.
+description: MUST invoke this skill BEFORE creating any git commit. Triggers proactively whenever you are about to run `git commit`, whether the user explicitly asks to commit or you decide to commit as part of a workflow. Also use when splitting a change set into multiple commits, reviewing diffs for commit grouping, drafting commit messages, or enforcing repository AGENTS.md commit rules. Follow the applicable AGENTS.md instructions, prefer atomic commits grouped by one coherent change, write commit messages in English, and require explicit user approval before any `git commit` or `git push`.
 ---
 
 # AG Atomic Commit
