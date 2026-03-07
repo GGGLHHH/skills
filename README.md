@@ -68,6 +68,14 @@ Synced from external repositories that maintain their own skills.
 | [vue-testing-best-practices](skills/vue-testing-best-practices) | Vue testing best practices | [vuejs-ai/skills](https://github.com/vuejs-ai/skills) |
 | [web-design-guidelines](skills/web-design-guidelines) | Web design guidelines for building beautiful interfaces | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
 
+## Personal Skills
+
+Hand-written skills maintained in this fork for personal workflows.
+
+| Skill | Description | Source |
+|-------|-------------|--------|
+| [ag-atomic-commit](skills/ag-atomic-commit) | Git commit planning with AG rules, atomic split strategy, and English commit message enforcement | Custom |
+
 ## FAQ
 
 ### What Makes This Collection Different?

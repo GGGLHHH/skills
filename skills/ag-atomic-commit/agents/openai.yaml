@@ -1,0 +1,4 @@
+interface:
+  display_name: "AG Atomic Commit"
+  short_description: "Split changes into atomic AG-compliant commits"
+  default_prompt: "Use $ag-atomic-commit to inspect this diff, split it into atomic commits, and draft English commit messages before asking for approval."
