@@ -49,3 +49,6 @@
 [submodule "vendor/shadcn"]
 	path = vendor/shadcn
 	url = https://github.com/shadcn-ui/ui
+[submodule "sources/tanstack-query"]
+	path = sources/tanstack-query
+	url = https://github.com/TanStack/query

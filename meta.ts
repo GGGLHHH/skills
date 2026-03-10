@@ -8,16 +8,17 @@ export interface VendorSkillMeta {
  * Repositories to clone as submodules and generate skills from source
  */
 export const submodules = {
-  react: 'https://github.com/reactjs/react.dev',
-  tailwindcss: 'https://github.com/tailwindlabs/tailwindcss.com',
-  vue: 'https://github.com/vuejs/docs',
-  nuxt: 'https://github.com/nuxt/nuxt',
-  vite: 'https://github.com/vitejs/vite',
-  unocss: 'https://github.com/unocss/unocss',
-  pnpm: 'https://github.com/pnpm/pnpm.io',
-  pinia: 'https://github.com/vuejs/pinia',
-  vitest: 'https://github.com/vitest-dev/vitest',
-  vitepress: 'https://github.com/vuejs/vitepress',
+  'react': 'https://github.com/reactjs/react.dev',
+  'tanstack-query': 'https://github.com/TanStack/query',
+  'tailwindcss': 'https://github.com/tailwindlabs/tailwindcss.com',
+  'vue': 'https://github.com/vuejs/docs',
+  'nuxt': 'https://github.com/nuxt/nuxt',
+  'vite': 'https://github.com/vitejs/vite',
+  'unocss': 'https://github.com/unocss/unocss',
+  'pnpm': 'https://github.com/pnpm/pnpm.io',
+  'pinia': 'https://github.com/vuejs/pinia',
+  'vitest': 'https://github.com/vitest-dev/vitest',
+  'vitepress': 'https://github.com/vuejs/vitepress',
 }
 
 /**

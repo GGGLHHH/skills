@@ -1,0 +1,5 @@
+- Prefer using TypeScript over JavaScript.
+- Prefer TanStack Query v5 object-style APIs like `useQuery({ ... })` and `useMutation({ ... })`.
+- Extract reusable config with `queryOptions`, `infiniteQueryOptions`, and `mutationOptions` instead of repeating `queryKey`/`queryFn`.
+- Keep `QueryClient` stable for the lifetime of the app or request; prefer tuning `staleTime` over disabling query features.
+- For Vue Query composables, accept `MaybeRefOrGetter` inputs and keep reactive values inside `queryKey` or `enabled`.
