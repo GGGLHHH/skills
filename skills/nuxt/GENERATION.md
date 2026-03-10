@@ -1,5 +1,5 @@
 # Generation Info
 
 - **Source:** `sources/nuxt`
-- **Git SHA:** `c9fed804b9bef362276033b03ca43730c6efa7dc`
-- **Generated:** 2026-01-28
+- **Git SHA:** `9d27cf5072cd59b03fe13efa20ef2679346c3a3b`
+- **Generated:** 2026-03-10

@@ -1,5 +1,5 @@
 # Sync Info
 
 - **Source:** `vendor/web-design-guidelines/skills/web-design-guidelines`
-- **Git SHA:** `e23951b8cad2f4b1e7e176c5731127c1263fe86f`
-- **Synced:** 2026-01-31
+- **Git SHA:** `64bee5b7ea30702448e2aed774eb361914029944`
+- **Synced:** 2026-03-10

@@ -1,5 +1,5 @@
 # Generation Info
 
 - **Source:** `sources/unocss`
-- **Git SHA:** `2f7f267d0cc0c43d44357208aabb35b049359a08`
-- **Generated:** 2026-01-28
+- **Git SHA:** `2a2c92d91fc7a23265901d355c3b151932745fed`
+- **Generated:** 2026-03-10

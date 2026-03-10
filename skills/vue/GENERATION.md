@@ -1,5 +1,5 @@
 # Generation Info
 
 - **Source:** `sources/vue`
-- **Git SHA:** `01abf2d03815d9d0ff0b06362a68d5d9542c9e48`
-- **Generated:** 2026-01-31
+- **Git SHA:** `1e91ed7d09072c69ff61bc54ee1acb1f27b2f6f4`
+- **Generated:** 2026-03-10

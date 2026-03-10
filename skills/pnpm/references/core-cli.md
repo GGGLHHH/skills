@@ -1,6 +1,6 @@
 ---
 name: pnpm-cli-commands
-description: Essential pnpm commands for package management, running scripts, and workspace operations
+description: Essential pnpm commands for package management, running scripts, supply-chain approvals, and workspace operations
 ---
 
 # pnpm CLI Commands
@@ -97,6 +97,17 @@ pnpm dlx create-vite my-app
 pnpm dlx degit user/repo my-project
 ```
 
+### Approve dependency build scripts
+```bash
+# Review packages that want to run install scripts
+pnpm approve-builds
+
+# Also review globally installed packages
+pnpm approve-builds -g
+```
+
+Use this when working in repos that restrict dependency lifecycle scripts and rely on `allowBuilds` in `pnpm-workspace.yaml`.
+
 ## Workspace Commands
 
 ### Run in all packages
@@ -156,6 +167,17 @@ pnpm patch-commit <path>
 # Remove a patch
 pnpm patch-remove <pkg>
 ```
+
+### Deploy a workspace package
+```bash
+# Produce a portable deployment directory for one workspace package
+pnpm --filter <pkg> --prod deploy <target-dir>
+
+# Example
+pnpm --filter @acme/web --prod deploy dist-deploy
+```
+
+`pnpm deploy` is useful for Docker multi-stage builds and self-contained deploy artifacts. It installs dependencies into an isolated `node_modules` inside the target directory.
 
 ### Store management
 ```bash
@@ -224,6 +246,8 @@ pnpm install --no-optional
 Source references:
 - https://pnpm.io/cli/install
 - https://pnpm.io/cli/add
+- https://pnpm.io/cli/approve-builds
+- https://pnpm.io/cli/deploy
 - https://pnpm.io/cli/run
 - https://pnpm.io/filtering
 -->
