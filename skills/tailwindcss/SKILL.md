@@ -4,7 +4,7 @@ description: Tailwind CSS v4 utility-first workflow covering setup, source detec
 metadata:
   author: Anthony Fu
   version: "2026.2.14"
-  source: Generated from https://github.com/tailwindlabs/tailwindcss.com, scripts located at https://github.com/antfu/skills
+  source: Generated from https://github.com/tailwindlabs/tailwindcss.com, scripts located at https://github.com/GGGLHHH/skills
 ---
 
 # Tailwind CSS

@@ -9,13 +9,13 @@ A curated collection of [Agent Skills](https://agentskills.io/home) reflecting [
 ## Installation
 
 ```bash
-pnpx skills add antfu/skills --skill='*'
+pnpx skills add GGGLHHH/skills --skill='*'
 ```
 
 or to install all of them globally:
 
 ```bash
-pnpx skills add antfu/skills --skill='*' -g
+pnpx skills add GGGLHHH/skills --skill='*' -g
 ```
 
 Learn more about the CLI usage at [skills](https://github.com/vercel-labs/skills).

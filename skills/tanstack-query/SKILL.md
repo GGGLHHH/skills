@@ -4,7 +4,7 @@ description: TanStack Query v5 server-state management for React and Vue. Use wh
 metadata:
   author: Anthony Fu
   version: "2026.3.10"
-  source: Generated from https://github.com/TanStack/query, scripts located at https://github.com/antfu/skills
+  source: Generated from https://github.com/TanStack/query, scripts located at https://github.com/GGGLHHH/skills
 ---
 
 # TanStack Query
