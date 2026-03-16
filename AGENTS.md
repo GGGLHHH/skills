@@ -4,7 +4,7 @@ Generate [Agent Skills](https://agentskills.io/home) from project documentation.
 
 PLEASE STRICTLY FOLLOW THE BEST PRACTICES FOR SKILL: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
 
-- Focus on agents capabilities and practical usage patterns. 
+- Focus on agents capabilities and practical usage patterns.
 - Ignore user-facing guides, introductions, get-started, install guides, etc.
 - Ignore content that LLM agents already confident about in their training data.
 - Make the skill as concise as possible, avoid creating too many references.
@@ -43,7 +43,7 @@ You don't need to do anything about them unless being asked.
 ├── meta.ts                     # Project metadata (repos & URLs)
 ├── instructions/               # Instructions for generating skills
 │   └── {project}.md            # Instructions for generating skills for {project}
-│ 
+│
 ├── sources/                    # Type 1: OSS repos (generate from docs)
 │   └── {project}/
 │       └── docs/               # Read documentation from here
