@@ -52,3 +52,6 @@
 [submodule "sources/tanstack-query"]
 	path = sources/tanstack-query
 	url = https://github.com/TanStack/query
+[submodule "vendor/agent-browser"]
+	path = vendor/agent-browser
+	url = https://github.com/vercel-labs/agent-browser

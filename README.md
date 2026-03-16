@@ -60,6 +60,7 @@ Synced from external repositories that maintain their own skills.
 
 | Skill | Description | Source |
 |-------|-------------|--------|
+| [agent-browser](skills/agent-browser) (Official) | Browser automation CLI for AI agents | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) |
 | [slidev](skills/slidev) (Official) | Slidev - presentation slides for developers | [slidevjs/slidev](https://github.com/slidevjs/slidev) |
 | [shadcn](skills/shadcn) (Official) | shadcn/ui - add, search, fix, style, and compose source-distributed UI components | [shadcn-ui/ui](https://github.com/shadcn-ui/ui) |
 | [tsdown](skills/tsdown) (Official) | tsdown - TypeScript library bundler powered by Rolldown | [rolldown/tsdown](https://github.com/rolldown/tsdown) |

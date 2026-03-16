@@ -25,6 +25,13 @@ export const submodules = {
  * Already generated skills, sync with their `skills/` directory
  */
 export const vendors: Record<string, VendorSkillMeta> = {
+  'agent-browser': {
+    official: true,
+    source: 'https://github.com/vercel-labs/agent-browser',
+    skills: {
+      'agent-browser': 'agent-browser',
+    },
+  },
   'slidev': {
     official: true,
     source: 'https://github.com/slidevjs/slidev',
