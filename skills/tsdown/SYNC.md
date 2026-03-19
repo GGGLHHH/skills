@@ -1,5 +1,5 @@
 # Sync Info
 
 - **Source:** `vendor/tsdown/skills/tsdown`
-- **Git SHA:** `2b1be7e0accdb1d6e903cd42642666431fc5e93d`
-- **Synced:** 2026-03-10
+- **Git SHA:** `c5d416647850b025668cad553debbfda02c8d05a`
+- **Synced:** 2026-03-19
