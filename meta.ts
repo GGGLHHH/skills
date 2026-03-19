@@ -60,6 +60,26 @@ export const vendors: Record<string, VendorSkillMeta> = {
       shadcn: 'shadcn',
     },
   },
+  'superpowers': {
+    official: true,
+    source: 'https://github.com/obra/superpowers',
+    skills: {
+      'brainstorming': 'brainstorming',
+      'dispatching-parallel-agents': 'dispatching-parallel-agents',
+      'executing-plans': 'executing-plans',
+      'finishing-a-development-branch': 'finishing-a-development-branch',
+      'receiving-code-review': 'receiving-code-review',
+      'requesting-code-review': 'requesting-code-review',
+      'subagent-driven-development': 'subagent-driven-development',
+      'systematic-debugging': 'systematic-debugging',
+      'test-driven-development': 'test-driven-development',
+      'using-git-worktrees': 'using-git-worktrees',
+      'using-superpowers': 'using-superpowers',
+      'verification-before-completion': 'verification-before-completion',
+      'writing-plans': 'writing-plans',
+      'writing-skills': 'writing-skills',
+    },
+  },
   'vuejs-ai': {
     source: 'https://github.com/vuejs-ai/skills',
     skills: {

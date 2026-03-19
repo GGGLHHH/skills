@@ -63,6 +63,20 @@ Synced from external repositories that maintain their own skills.
 | [agent-browser](skills/agent-browser) (Official) | Browser automation CLI for AI agents | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) |
 | [slidev](skills/slidev) (Official) | Slidev - presentation slides for developers | [slidevjs/slidev](https://github.com/slidevjs/slidev) |
 | [shadcn](skills/shadcn) (Official) | shadcn/ui - add, search, fix, style, and compose source-distributed UI components | [shadcn-ui/ui](https://github.com/shadcn-ui/ui) |
+| [brainstorming](skills/brainstorming) (Official) | Explore user intent, requirements, and design before implementation work | [obra/superpowers](https://github.com/obra/superpowers) |
+| [dispatching-parallel-agents](skills/dispatching-parallel-agents) (Official) | Coordinate 2+ independent tasks across parallel agents without shared state | [obra/superpowers](https://github.com/obra/superpowers) |
+| [executing-plans](skills/executing-plans) (Official) | Execute a written implementation plan in a separate session with review checkpoints | [obra/superpowers](https://github.com/obra/superpowers) |
+| [finishing-a-development-branch](skills/finishing-a-development-branch) (Official) | Wrap up completed implementation work and choose merge, PR, or cleanup paths | [obra/superpowers](https://github.com/obra/superpowers) |
+| [receiving-code-review](skills/receiving-code-review) (Official) | Handle code review feedback with technical verification before implementing changes | [obra/superpowers](https://github.com/obra/superpowers) |
+| [requesting-code-review](skills/requesting-code-review) (Official) | Request code review before merge or when finishing substantial implementation work | [obra/superpowers](https://github.com/obra/superpowers) |
+| [subagent-driven-development](skills/subagent-driven-development) (Official) | Execute implementation plans through task-scoped subagents in the current session | [obra/superpowers](https://github.com/obra/superpowers) |
+| [systematic-debugging](skills/systematic-debugging) (Official) | Diagnose bugs, failing tests, and unexpected behavior before proposing fixes | [obra/superpowers](https://github.com/obra/superpowers) |
+| [test-driven-development](skills/test-driven-development) (Official) | Apply TDD for features, bug fixes, and refactors before writing implementation code | [obra/superpowers](https://github.com/obra/superpowers) |
+| [using-git-worktrees](skills/using-git-worktrees) (Official) | Create isolated git worktrees for feature work and plan execution safely | [obra/superpowers](https://github.com/obra/superpowers) |
+| [using-superpowers](skills/using-superpowers) (Official) | Trigger and sequence applicable superpowers skills from the start of a conversation | [obra/superpowers](https://github.com/obra/superpowers) |
+| [verification-before-completion](skills/verification-before-completion) (Official) | Verify with real commands before claiming work is complete, fixed, or passing | [obra/superpowers](https://github.com/obra/superpowers) |
+| [writing-plans](skills/writing-plans) (Official) | Create detailed implementation plans before touching code for multi-step work | [obra/superpowers](https://github.com/obra/superpowers) |
+| [writing-skills](skills/writing-skills) (Official) | Create, revise, and verify skills with a TDD-style process | [obra/superpowers](https://github.com/obra/superpowers) |
 | [tsdown](skills/tsdown) (Official) | tsdown - TypeScript library bundler powered by Rolldown | [rolldown/tsdown](https://github.com/rolldown/tsdown) |
 | [turborepo](skills/turborepo) (Official) | Turborepo - high-performance build system for monorepos | [vercel/turborepo](https://github.com/vercel/turborepo) |
 | [vueuse-functions](skills/vueuse-functions) (Official) | VueUse - 200+ Vue composition utilities | [vueuse/skills](https://github.com/vueuse/skills) |
