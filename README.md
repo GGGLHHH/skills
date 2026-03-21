@@ -20,6 +20,28 @@ pnpx skills add GGGLHHH/skills --skill='*' -g
 
 Learn more about the CLI usage at [skills](https://github.com/vercel-labs/skills).
 
+## Claude Code Plugins
+
+This repository can also act as a Claude Code plugin marketplace.
+
+### Add This Repository as a Marketplace
+
+```bash
+/plugin marketplace add GGGLHHH/skills
+```
+
+### Install a Plugin from This Repository
+
+```bash
+/plugin install ralph-wiggum@skills
+```
+
+### Notes
+
+- `ralph-wiggum@skills` is a self-maintained fork of the official plugin.
+- If you already have `ralph-wiggum@claude-plugins-official` enabled, disable the official one to avoid loading two variants of the same plugin.
+- The plugin source lives in [`plugins/ralph-wiggum/`](plugins/ralph-wiggum/).
+
 ## Skills
 
 This collection is aim to be a one-stop collection of you are mainly working on Vite/Nuxt. It includes skills from different sources with different scopes.
