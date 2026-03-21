@@ -10,7 +10,7 @@
     {
       "name": "ggglhhh-ralph-wiggum",
       "description": "Interactive self-referential AI loops for iterative development. Forked from official with multi-line bash quoting fix (PR #12642).",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "author": {
         "name": "Anthropic (forked by GGGLHHH)"
       },
