@@ -11,7 +11,7 @@ PLEASE STRICTLY FOLLOW THE BEST PRACTICES FOR SKILL: https://platform.claude.com
 
 ## Skill Source Types
 
-There are two types of skill sources. The project lists are defined in `meta.ts`:
+There are three types of skill/plugin sources plus hand-written skills. The project lists are defined in `meta.ts`:
 
 ### Type 1: Generated Skills (`sources/`)
 
@@ -30,7 +30,16 @@ For projects that **already maintain their own skills**. We clone their repo as 
 - **Source:** `vendor/{project}/skills/{skill-name}/`
 - **Config:** Each vendor specifies which skills to sync and their output names in `meta.ts`
 
-### Type 3: Hand-written Skills
+### Type 3: Self-maintained Plugins (`plugins/`)
+
+For Claude Code **plugins** that we maintain in this repository. These are not skills; they use the Claude plugin structure with `commands/`, `hooks/`, `.claude-plugin/`, and optional scripts.
+
+- **Projects:** ralph-wiggum
+- **Workflow:** Copy or maintain plugin files directly in-repo
+- **Source:** `plugins/{plugin}/`
+- **Config:** Registered in the `plugins` export in `meta.ts`
+
+### Type 4: Hand-written Skills
 
 For skills that are written by Anthony Fu with his preferences, experience, tastes and best practices.
 
@@ -52,6 +61,14 @@ You don't need to do anything about them unless being asked.
 │   └── {project}/
 │       └── skills/
 │           └── {skill-name}/   # Individual skills to sync
+│
+├── plugins/                   # Type 3: Self-maintained Claude Code plugins
+│   └── {plugin}/
+│       ├── .claude-plugin/
+│       │   └── plugin.json    # Plugin metadata
+│       ├── commands/          # Plugin commands (slash commands)
+│       ├── hooks/             # Plugin hooks (stop, etc.)
+│       └── scripts/           # Plugin scripts
 │
 └── skills/                     # Output directory (generated or synced)
     └── {output-name}/

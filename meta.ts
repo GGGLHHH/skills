@@ -104,6 +104,14 @@ export const vendors: Record<string, VendorSkillMeta> = {
 }
 
 /**
+ * Self-maintained Claude Code plugins (not skills)
+ * These are plugins with commands/, hooks/, .claude-plugin/ structure
+ */
+export const plugins = [
+  'ralph-wiggum',
+]
+
+/**
  * Hand-written skills with Anthony Fu's preferences/tastes/recommendations
  */
 export const manual = [
