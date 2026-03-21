@@ -4,13 +4,26 @@
 # Prevents session exit when a ralph-loop is active
 # Feeds Claude's output back as input to continue the loop
 
-set -euo pipefail
+# Do NOT use set -e: jq parse failures must be handled gracefully, not crash the script
+set -uo pipefail
 
 # Read hook input from stdin (advanced stop hook API)
 HOOK_INPUT=$(cat)
 
-# Check if ralph-loop is active
-RALPH_STATE_FILE=".claude/ralph-loop.local.md"
+# Fix #1: Resolve state file using git repo root as boundary.
+# Priority: CLAUDE_PROJECT_DIR > hook input cwd > PWD > git rev-parse
+# Then resolve to repo root and look for state file there only.
+RESOLVE_DIR="${CLAUDE_PROJECT_DIR:-}"
+if [[ -z "$RESOLVE_DIR" ]]; then
+  RESOLVE_DIR=$(echo "$HOOK_INPUT" | jq -r '.cwd // empty' 2>/dev/null || echo "")
+fi
+if [[ -z "$RESOLVE_DIR" ]]; then
+  RESOLVE_DIR="$PWD"
+fi
+
+# Find git repo root — this is the safe boundary, never search beyond it
+PROJECT_ROOT=$(git -C "$RESOLVE_DIR" rev-parse --show-toplevel 2>/dev/null || echo "$RESOLVE_DIR")
+RALPH_STATE_FILE="$PROJECT_ROOT/.claude/ralph-loop.local.md"
 
 if [[ ! -f "$RALPH_STATE_FILE" ]]; then
   # No active loop - allow exit
@@ -55,9 +68,9 @@ if [[ $MAX_ITERATIONS -gt 0 ]] && [[ $ITERATION -ge $MAX_ITERATIONS ]]; then
 fi
 
 # Get transcript path from hook input
-TRANSCRIPT_PATH=$(echo "$HOOK_INPUT" | jq -r '.transcript_path')
+TRANSCRIPT_PATH=$(echo "$HOOK_INPUT" | jq -r '.transcript_path' 2>/dev/null || echo "")
 
-if [[ ! -f "$TRANSCRIPT_PATH" ]]; then
+if [[ -z "$TRANSCRIPT_PATH" ]] || [[ ! -f "$TRANSCRIPT_PATH" ]]; then
   echo "⚠️  Ralph loop: Transcript file not found" >&2
   echo "   Expected: $TRANSCRIPT_PATH" >&2
   echo "   This is unusual and may indicate a Claude Code internal issue." >&2
@@ -86,29 +99,28 @@ if [[ -z "$LAST_LINE" ]]; then
   exit 0
 fi
 
-# Parse JSON with error handling
-LAST_OUTPUT=$(echo "$LAST_LINE" | jq -r '
+# Fix #2: Strip control characters (U+0000-U+001F except \n \r \t) before jq parsing
+# Transcripts may contain unescaped control chars that break jq
+CLEAN_LINE=$(echo "$LAST_LINE" | tr -d '\000-\010\013\014\016-\037')
+
+# Fix #3: Parse JSON with proper error handling (no set -e, capture exit code explicitly)
+LAST_OUTPUT=$(echo "$CLEAN_LINE" | jq -r '
   .message.content |
   map(select(.type == "text")) |
   map(.text) |
   join("\n")
-' 2>&1)
+' 2>/dev/null)
+JQ_EXIT=$?
 
-# Check if jq succeeded
-if [[ $? -ne 0 ]]; then
-  echo "⚠️  Ralph loop: Failed to parse assistant message JSON" >&2
-  echo "   Error: $LAST_OUTPUT" >&2
-  echo "   This may indicate a transcript format issue" >&2
-  echo "   Ralph loop is stopping." >&2
-  rm "$RALPH_STATE_FILE"
-  exit 0
-fi
+if [[ $JQ_EXIT -ne 0 ]] || [[ -z "$LAST_OUTPUT" ]]; then
+  # Fallback: use Perl instead of grep -P for macOS compatibility
+  LAST_OUTPUT=$(echo "$CLEAN_LINE" | perl -ne 'if (/"type":"text".*?"text":"((?:\\.|[^"\\])*)"/) { print $1; exit 0 }' 2>/dev/null || echo "")
 
-if [[ -z "$LAST_OUTPUT" ]]; then
-  echo "⚠️  Ralph loop: Assistant message contained no text content" >&2
-  echo "   Ralph loop is stopping." >&2
-  rm "$RALPH_STATE_FILE"
-  exit 0
+  if [[ -z "$LAST_OUTPUT" ]]; then
+    # Last resort: use a non-empty placeholder so the loop continues
+    # rather than stopping due to a transcript parsing issue
+    LAST_OUTPUT="[ralph-loop: transcript parse fallback - continuing loop]"
+  fi
 fi
 
 # Check for completion promise (only if set)
