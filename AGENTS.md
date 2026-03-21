@@ -34,7 +34,7 @@ For projects that **already maintain their own skills**. We clone their repo as 
 
 For Claude Code **plugins** that we maintain in this repository. These are not skills; they use the Claude plugin structure with `commands/`, `hooks/`, `.claude-plugin/`, and optional scripts.
 
-- **Projects:** ralph-wiggum
+- **Projects:** ggglhhh-ralph-wiggum
 - **Workflow:** Copy or maintain plugin files directly in-repo
 - **Source:** `plugins/{plugin}/`
 - **Config:** Registered in the `plugins` export in `meta.ts`

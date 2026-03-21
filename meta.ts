@@ -108,7 +108,7 @@ export const vendors: Record<string, VendorSkillMeta> = {
  * These are plugins with commands/, hooks/, .claude-plugin/ structure
  */
 export const plugins = [
-  'ralph-wiggum',
+  'ggglhhh-ralph-wiggum',
 ]
 
 /**

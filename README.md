@@ -33,14 +33,14 @@ This repository can also act as a Claude Code plugin marketplace.
 ### Install a Plugin from This Repository
 
 ```bash
-/plugin install ralph-wiggum@skills
+/plugin install ggglhhh-ralph-wiggum@skills
 ```
 
 ### Notes
 
-- `ralph-wiggum@skills` is a self-maintained fork of the official plugin.
+- `ggglhhh-ralph-wiggum@skills` is a self-maintained fork of the official `ralph-wiggum` plugin.
 - If you already have `ralph-wiggum@claude-plugins-official` enabled, disable the official one to avoid loading two variants of the same plugin.
-- The plugin source lives in [`plugins/ralph-wiggum/`](plugins/ralph-wiggum/).
+- The plugin source lives in [`plugins/ggglhhh-ralph-wiggum/`](plugins/ggglhhh-ralph-wiggum/).
 
 ## Skills
 
